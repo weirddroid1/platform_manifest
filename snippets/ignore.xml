@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remove Lineage internal repos -->
+  <remove-project name="LineageOS/android_vendor_crowdin" />
+  <remove-project name="LineageOS/charter" />
+  <remove-project name="LineageOS/cm_crowdin" />
+  <remove-project name="LineageOS/contributors-cloud-generator" />
+  <remove-project name="LineageOS/hudson" />
+  <remove-project name="LineageOS/lineage_wiki" />
+  <remove-project name="LineageOS/www" />
+</manifest>
