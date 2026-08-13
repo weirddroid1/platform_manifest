@@ -32,28 +32,28 @@
   <!-- Remove Lineage repos that we don't have a fork of and don't need -->
   <include name="snippets/ignore.xml" />
 
-  <!-- AICP non-platform -->
-  <project path="device/aicp/sepolicy" name="AICP/device_aicp_sepolicy" remote="aicp" />
-  <project path="frameworks/opt/aicpgear" name="AICP/frameworks_opt_aicpgear" remote="aicp" />
-  <project path="frameworks/opt/slimrecent" name="AICP/frameworks_opt_slimrecent" remote="aicp" />
-  <project path="lineage/mirror" name="AICP/mirror" groups="infra" revision="main" remote="aicp" />
-  <project path="lineage/scripts" name="AICP/scripts" groups="tools" remote="aicp" revision="main" />
-  <project path="packages/apps/AicpExtras" name="AICP/packages_apps_AicpExtras" remote="aicp" />
-  <project path="packages/apps/GameSpace" name="AICP/packages_apps_GameSpace" remote="aicp" />
-  <project path="packages/apps/LineageParts" name="AICP/packages_apps_LineageParts" remote="aicp" />
-  <project path="packages/apps/SetupWizard" name="AICP/packages_apps_SetupWizard" remote="aicp" />
-  <project path="packages/apps/TilesWallpaper" name="AICP/packages_apps_TilesWallpaper" remote="aicp" />
-  <project path="packages/apps/Updater" name="AICP/packages_apps_Updater" remote="aicp" />
-  <project path="packages/overlays/AICP" name="AICP/packages_overlays_AICP" remote="aicp" />
-  <project path="packages/overlays/Lineage" name="AICP/packages_overlays_Lineage" remote="aicp" />
-  <project path="packages/resources/deviceparts" name="AICP/packages_resources_deviceparts" remote="aicp" />
-  <project path="packages/resources/devicesettings" name="AICP/packages_resources_devicesettings" remote="aicp" />
-  <project path="packages/services/OmniJaws" name="AICP/packages_services_OmniJaws" remote="aicp" />
+  <!-- weirddroid1 non-platform -->
+  <project path="device/aicp/sepolicy" name="weirddroid1/device_aicp_sepolicy" remote="aicp" />
+  <project path="frameworks/opt/aicpgear" name="weirddroid1/frameworks_opt_aicpgear" remote="aicp" />
+  <project path="frameworks/opt/slimrecent" name="weirddroid1/frameworks_opt_slimrecent" remote="aicp" />
+  <project path="lineage/mirror" name="weirddroid1/mirror" groups="infra" revision="main" remote="aicp" />
+  <project path="lineage/scripts" name="weirddroid1/scripts" groups="tools" remote="aicp" revision="main" />
+  <project path="packages/apps/AicpExtras" name="weirddroid1/packages_apps_AicpExtras" remote="aicp" />
+  <project path="packages/apps/GameSpace" name="weirddroid1/packages_apps_GameSpace" remote="aicp" />
+  <project path="packages/apps/LineageParts" name="weirddroid1/packages_apps_LineageParts" remote="aicp" />
+  <project path="packages/apps/SetupWizard" name="weirddroid1/packages_apps_SetupWizard" remote="aicp" />
+  <project path="packages/apps/TilesWallpaper" name="weirddroid1/packages_apps_TilesWallpaper" remote="aicp" />
+  <project path="packages/apps/Updater" name="weirddroid1/packages_apps_Updater" remote="aicp" />
+  <project path="packages/overlays/weirddroid1" name="weirddroid1/packages_overlays_weirddroid1" remote="aicp" />
+  <project path="packages/overlays/Lineage" name="weirddroid1/packages_overlays_Lineage" remote="aicp" />
+  <project path="packages/resources/deviceparts" name="weirddroid1/packages_resources_deviceparts" remote="aicp" />
+  <project path="packages/resources/devicesettings" name="weirddroid1/packages_resources_devicesettings" remote="aicp" />
+  <project path="packages/services/OmniJaws" name="weirddroid1/packages_services_OmniJaws" remote="aicp" />
   <project path="prebuilts/tools-aicp" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" />
-  <project path="vendor/aicp" name="AICP/vendor_aicp" remote="aicp" />
+  <project path="vendor/aicp" name="weirddroid1/vendor_aicp" remote="aicp" />
 
-  <!-- AICP platform -->
-  <project path="build/make" name="AICP/build" groups="pdk,sysui-studio" remote="aicp" >
+  <!-- weirddroid1 platform -->
+  <project path="build/make" name="weirddroid1/build" groups="pdk,sysui-studio" remote="aicp" >
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
     <linkfile dest="build/core" src="core" />
@@ -61,19 +61,19 @@
     <linkfile dest="build/target" src="target" />
     <linkfile dest="build/tools" src="tools" />
   </project>
-  <project path="build/soong" name="AICP/build_soong" groups="pdk,tradefed" remote="aicp" >
+  <project path="build/soong" name="weirddroid1/build_soong" groups="pdk,tradefed" remote="aicp" >
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
-  <project path="frameworks/av" name="AICP/frameworks_av" remote="aicp" />
-  <project path="frameworks/base" name="AICP/frameworks_base" remote="aicp" />
-  <project path="packages/apps/Dialer" name="AICP/packages_apps_Dialer" remote="aicp" />
-  <project path="packages/apps/Launcher3" name="AICP/packages_apps_Launcher3" remote="aicp" />
-  <project path="packages/apps/Settings" name="AICP/packages_apps_Settings" groups="pdk-fs" remote="aicp" />
-  <project path="packages/apps/ThemePicker" name="AICP/packages_apps_ThemePicker" remote="aicp" />
-  <project path="packages/modules/DnsResolver" name="AICP/packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="aicp" />
-  <project path="platform_manifest" name="AICP/platform_manifest" remote="aicp" />
-  <project path="system/core" name="AICP/system_core" groups="pdk" remote="aicp" />
+  <project path="frameworks/av" name="weirddroid1/frameworks_av" remote="aicp" />
+  <project path="frameworks/base" name="weirddroid1/frameworks_base" remote="aicp" />
+  <project path="packages/apps/Dialer" name="weirddroid1/packages_apps_Dialer" remote="aicp" />
+  <project path="packages/apps/Launcher3" name="weirddroid1/packages_apps_Launcher3" remote="aicp" />
+  <project path="packages/apps/Settings" name="weirddroid1/packages_apps_Settings" groups="pdk-fs" remote="aicp" />
+  <project path="packages/apps/ThemePicker" name="weirddroid1/packages_apps_ThemePicker" remote="aicp" />
+  <project path="packages/modules/DnsResolver" name="weirddroid1/packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="aicp" />
+  <project path="platform_manifest" name="weirddroid1/platform_manifest" remote="aicp" />
+  <project path="system/core" name="weirddroid1/system_core" groups="pdk" remote="aicp" />
 
   <!-- Other additions -->
   <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc-qpr3" />
